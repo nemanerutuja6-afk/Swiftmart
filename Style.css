@@ -4,7 +4,11 @@
     border: border-box;
 }
 body{
-    height: 3000px;
+   
+}
+.overall{
+ height: 2400px;
+    background: linear-gradient(to bottom right,#6c83e6,#764ba2);
 }
 
 .navbar {
@@ -45,6 +49,14 @@ body{
     font-size: 1rem;
     border-bottom-right-radius: 4px 4px;
 }
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px; 
+  background-color: pink; 
+  z-index: 1000; 
+}
 
 .navbar-nav a {
       text-decoration: none;
@@ -63,7 +75,7 @@ body{
     position: relative;
     position: static;
     background-size: cover;
-    background: linear-gradient(to bottom right,#6c83e6,#764ba2);
+    
 }
 .content{
     position: absolute;
@@ -71,7 +83,9 @@ body{
     width: 500px;
     color: black;
      margin: 0 0 0 150px;
+     /* z-index: 1000; */
 }
+
 .content button{
     background-color: #ed5f55;
     color: white;
@@ -81,34 +95,338 @@ body{
     margin-left: 200px;
     border-radius: 5px 5px 5px 5px;
 }
-h2 {
+
+   /* categories */
+
+ .h2 {
       text-align: center;
      padding: 10px;
      color: white;
+background: linear-gradient(to bottom right,#6c83e6,#764ba2);
 }
-.box {
-     height: 100%;
+.deals-box{
+     height: 700px;
      width: 100%;
-    background: linear-gradient(to bottom right,#6c83e6,#764ba2);
+    display: flex;
 }
-.inline-block {
-    background-color: white;
-    height: 500px;
-    width: 500px;
-   margin: 20px 0 0 20px;
-   display: block;
+.deals-card{
+  background-color: white;
+    height: 600px;
+    width: 700px;
+   margin: 60px 20px 0 20px;
+   display: block; 
 }
-.inline-block img{
-    height: 30% ;
-    width: 30%;
-    padding: 30px;
-}
-.inline-block img:hover{
-    transform: scale(1.05);
+.deals-card:hover{
+     transform: scale(1.05);
       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-      border-color: #d4dce5;
+      border: 2px solid black;
 }
-.inline-block h3 {
+.card-header{
+    margin-top: 5px;
+    font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+      }
+.deals-card .box-2{
+   margin: 20px 0 0 150px;
+
+}
+.deals-card img{
+    height: 30% ;
+    width: 40%;
+    padding: 40px;
+}
+.deals-card img:hover{
+   transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      border-color: #007bff;
+}
+.deals-card h3 {
     margin-left: 70px ;
     
+}
+
+/* signup */
+
+.signup {
+    
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-image: url(loginbackgound.webp);
+    background-size: cover;
+}
+.main-container{
+    display: flex;
+    width: 700px;
+    align-items: center;
+    padding: 40px;
+    margin-top: 130px;
+    margin-left: 400px;
+    border: 2px solid black;
+    border-radius: 8px 8px 8px 8px;
+    color: black;
+    
+}
+.side-panel{
+    color: black;
+    text-align: center;
+    padding: 10%;
+}
+.side-panel h2{
+    color: black;
+}
+
+.side-panel button{
+    background: transparent;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+}
+.side-panel button:hover{
+     background: black;
+    color:white ;
+}
+.form-container .button{
+    width: 100%;
+   padding: 15px;
+   margin-top: 20px;
+   margin-left: 15px;
+   border: none;
+   background: transparent;
+   border-radius: 8px;
+    border: 1px solid white;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: rgb(50, 50, 50);
+}
+.form-container .button:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: #2575fc;
+}
+.form-container h2{
+    color: black;
+}
+
+.form-container input[type="name"],
+.form-container input[type="email"],
+.form-container input[type="password"]
+{
+    width: 100%;
+    padding: 12px;
+    margin: 8px ;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+} 
+
+/* login */
+
+.login{
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-image: url(loginbackgound.webp);
+    background-size: cover;
+}
+.container-login{
+    display: flex;
+    width: 700px;
+    align-items: center;
+    padding: 40px;
+    margin-top: 170px;
+    margin-left: 370px;
+    border: 2px solid black;
+    border-radius: 8px 8px 8px 8px;
+    color: black;
+}
+.form-containerlogin input[type="email"],
+.form-containerlogin input[type="password"]{
+     width: 100%;
+    padding: 12px;
+    margin: 8px ;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.form-containerlogin .button{
+    width: 100%;
+   padding: 15px;
+   margin-top: 20px;
+   margin-left: 15px;
+   border: none;
+   background: transparent;
+   border-radius: 8px;
+    border: 1px solid white;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: rgb(50, 50, 50);
+}
+.form-containerlogin .button:hover{
+     transform: scale(1.05);
+    background-color: white;
+    color: blue;
+}
+.form-containerlogin h2{
+    color: black;
+}
+.footer{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+.contact{
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+/* Contact-page */
+.main-body{
+    display: flex;
+    background-color: white;
+}
+
+.Contact-page{
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+   background-color: rgb(188, 93, 93);
+   
+    
+}
+.main-contactpage{
+    width: 400px;
+    align-items: center;
+    padding: 40px;
+    margin-top: 60px;
+    margin-left: 200px;
+    border: 2px solid black;
+    border-radius: 8px 8px 8px 8px;
+    color: black;
+}
+.main-contactpage button{
+     width:100%;
+   padding: 10px;
+   margin-top: 20px;
+   margin-left: 8px;
+   border: none;
+   background: transparent;
+   border-radius: 8px;
+    border: 1px solid white;
+   color: white;
+   font-size: 16px;
+   cursor: pointer;
+   background-color: rgb(210, 54, 54)
+}
+.main-contactpage input[type="name"],
+.main-contactpage input[type="email"],
+.main-contactpage input[type="subject"]
+{
+     width: 100%;
+    padding: 10px;
+    margin: 8px ;
+    margin-left: 2px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+#message{
+ width: 100%;
+    padding: 12px;
+    margin: 8px ;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.top-page{
+    text-align: center;
+    margin-top: 30px;
+}
+  .Address{
+    display: flex;
+}  
+.phone{
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 2px;
+    margin-top: 180px;
+    margin-left: 80px;
+}
+.email{
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 2px;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.location{
+    margin-left: 50px;
+    margin-top: 130px;
+}
+.Top-deals{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.deal-1:hover{
+     transform: scale(1.05);
+      border-color: #007bff;
+}
+.deal-2:hover{
+    transform: scale(1.05);
+      border-color: #007bff;
+}
+.deal-3:hover{
+    transform: scale(1.05);
+      border-color: #007bff;
+}
+.h1{
+    color: white;
+    margin-left: 20px;
+}
+.daily-deals{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.Deals-h1{
+    color: white;
+    margin-left: 20px;
+}
+.Daily-d1:hover{
+transform: scale(1.05);
+      border-color: #007bff;
+}
+.Daily-d2:hover{
+    transform: scale(1.05);
+      border-color: #007bff;
+}
+.Daily-d3:hover{
+transform: scale(1.05);
+      border-color: #007bff;
+}
+.footer{
+    background-color: black;
+}
+.footer-link a{
+    text-decoration: none;
+    color: white;
+}
+.footer-link a:hover{
+    color: #007bff;
+    text-decoration: underline;
 }
